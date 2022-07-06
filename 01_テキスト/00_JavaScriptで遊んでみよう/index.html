@@ -15,9 +15,21 @@
 
       const display = document.getElementById("display")
       const button = document.getElementById("button")
-      button.onclick = function () {
-        display.textContent = "クリックされた！！"
+      let count = 0
+      const multiply = function (x, y) {
+        let z = x + y
+        z = Math.round(z)
+        return z
       }
+      button.onclick = function () {
+        display.textContent = multiply(2.3, 3.8)
+        // display.textContent = multiply(count, count + 1)
+        // count += 1
+      }
+      const sayHello = function () {
+        alert(new Date().toLocaleString())
+      }
+      sayHello()
     </script>
   </body>
 </html>
