@@ -16,6 +16,49 @@
       <h2 id="display">0</h2>
     </div>
     <button id="plus-button">+1</button>
+    <button id="minus-button">-1</button>
+    <button id="twice-button">×2</button>
+
+    <div>
+      <input id="input-area" />
+
+      <!-- Clicking each button enables you to get and add numbers of its own to  the previous -->
+
+      <button onclick="document.getElementById('input-area').value += '1'">
+        1
+      </button>
+
+      <!-- querySelector('input') = getElementById('#input-area') 「#」 means its id-->
+      <button onclick="document.querySelector('#input-area').value += '2'">
+        2
+      </button>
+
+      <button onclick="document.querySelector('input').value += '3'">3</button>
+      <button onclick="document.querySelector('input').value += '4'">4</button>
+      <button onclick="document.querySelector('input').value += '5'">5</button>
+      <button onclick="document.querySelector('input').value += '6'">6</button>
+      <button onclick="document.querySelector('input').value += '7'">7</button>
+      <button onclick="document.querySelector('input').value += '8'">8</button>
+      <button onclick="document.querySelector('input').value += '9'">9</button>
+      <button onclick="document.querySelector('input').value = ''">C</button>
+    </div>
+    <div>
+      <button onclick="document.getElementById('input-area').value += '+'">
+        +
+      </button>
+      <button onclick="document.getElementById('input-area').value += '-'">
+        -
+      </button>
+      <button onclick="document.getElementById('input-area').value += '*'">
+        ×
+      </button>
+      <button onclick="document.getElementById('input-area').value += '/'">
+        ÷
+      </button>
+
+      <button onclick="calc()">=</button>
+      <button onclick="update('')">C</button>
+    </div>
 
     <script src="main.js"></script>
   </body>
