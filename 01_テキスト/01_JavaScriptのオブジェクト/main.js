@@ -12,6 +12,14 @@ const hikakin = {
   },
 }
 
+display = document.getElementById("display")
+button = document.getElementById("button")
+button.onclick = function () {
+  display.textContent = hikakin["name"]
+  hikakin.sayHello()
+  console.dir(window)
+}
+
 // 練習問題
 // hikakin オブジェクトに入っている sayHello メソッドを実行してください。
 
